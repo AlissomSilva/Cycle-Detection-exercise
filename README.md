@@ -30,7 +30,6 @@ Execute o programa Java:
 O método has_cycle na classe LinkedListCycleDetection é usado para detectar ciclos na lista encadeada. Ele retorna 1 se houver um ciclo e 0 se não houver. Se a lista estiver vazia, o método retornará null.
 
 Exemplo de Uso:
-```java
 NoListaEncadeada listaVazia = null;
 System.out.println(LinkedListCycleDetection.has_cycle(listaVazia)); // Deve imprimir: null
 
@@ -49,8 +48,6 @@ node5.next = node6;
 node6.next = node4;
 System.out.println(LinkedListCycleDetection.has_cycle(node4)); // Deve imprimir: 1
 
-## Contribuição
-Sinta-se à vontade para contribuir com este projeto. Para contribuir, siga estes passos:
 
 Faça um fork do repositório.
 Crie uma branch para suas alterações (git checkout -b minha-contribuicao).
