@@ -59,20 +59,19 @@ Para contribuir com o projeto, siga estes passos:
 1. Faça um fork do repositório.
    
 2. Crie uma branch para suas alterações:
-
-sh
-Copiar código
+```sh
 git checkout -b minha-contribuicao
+```
 
 3. Faça suas alterações e commit:
-sh
-Copiar código
+```sh
 git commit -am 'Adiciona nova funcionalidade'
+```
 
 4. Faça o push para sua branch:
-sh
-Copiar código
+```sh
 git push origin minha-contribuicao
+```
 
 5. Abra um Pull Request no GitHub.
 
