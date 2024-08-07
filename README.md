@@ -29,28 +29,50 @@ Execute o programa Java:
 
 O método has_cycle na classe LinkedListCycleDetection é usado para detectar ciclos na lista encadeada. Ele retorna 1 se houver um ciclo e 0 se não houver. Se a lista estiver vazia, o método retornará null.
 
-Exemplo de Uso:
-NoListaEncadeada listaVazia = null;
-System.out.println(LinkedListCycleDetection.has_cycle(listaVazia)); // Deve imprimir: null
+### Exemplo de Uso
 
-NoListaEncadeada node1 = new NoListaEncadeada(1);
-NoListaEncadeada node2 = new NoListaEncadeada(2);
-NoListaEncadeada node3 = new NoListaEncadeada(3);
-node1.next = node2;
-node2.next = node3;
-System.out.println(LinkedListCycleDetection.has_cycle(node1)); // Deve imprimir: 0
+   ```java
+   NoListaEncadeada listaVazia = null;
+   System.out.println(LinkedListCycleDetection.has_cycle(listaVazia)); // Deve imprimir: null
+   
+   NoListaEncadeada node1 = new NoListaEncadeada(1);
+   NoListaEncadeada node2 = new NoListaEncadeada(2);
+   NoListaEncadeada node3 = new NoListaEncadeada(3);
+   node1.next = node2;
+   node2.next = node3;
+   System.out.println(LinkedListCycleDetection.has_cycle(node1)); // Deve imprimir: 0
+   
+   NoListaEncadeada node4 = new NoListaEncadeada(1);
+   NoListaEncadeada node5 = new NoListaEncadeada(2);
+   NoListaEncadeada node6 = new NoListaEncadeada(3);
+   node4.next = node5;
+   node5.next = node6;
+   node6.next = node4;
+   System.out.println(LinkedListCycleDetection.has_cycle(node4)); // Deve imprimir: 1
+```
 
-NoListaEncadeada node4 = new NoListaEncadeada(1);
-NoListaEncadeada node5 = new NoListaEncadeada(2);
-NoListaEncadeada node6 = new NoListaEncadeada(3);
-node4.next = node5;
-node5.next = node6;
-node6.next = node4;
-System.out.println(LinkedListCycleDetection.has_cycle(node4)); // Deve imprimir: 1
 
 
-Faça um fork do repositório.
-Crie uma branch para suas alterações (git checkout -b minha-contribuicao).
-Faça suas alterações e commit (git commit -am 'Adiciona nova funcionalidade').
-Faça o push para sua branch (git push origin minha-contribuicao).
-Abra um Pull Request no GitHub.
+## Contribuindo
+Para contribuir com o projeto, siga estes passos:
+
+1. Faça um fork do repositório.
+   
+2. Crie uma branch para suas alterações:
+
+sh
+Copiar código
+git checkout -b minha-contribuicao
+
+3. Faça suas alterações e commit:
+sh
+Copiar código
+git commit -am 'Adiciona nova funcionalidade'
+
+4. Faça o push para sua branch:
+sh
+Copiar código
+git push origin minha-contribuicao
+
+5. Abra um Pull Request no GitHub.
+
